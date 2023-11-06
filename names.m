@@ -93,7 +93,7 @@ yy = spline(t, y3, tt);
 figure(1)
 plot(xx, yy, 'k', 'LineWidth', 1.5) 
 hold on
-plot(x2, y2, 'bo', 'MarkerFaceColor', 'b') 
+plot(x3, y3, 'bo', 'MarkerFaceColor', 'b') 
 axis([-0.2 9 -0.2 4.5])
 grid on
 title('Spline Interpolation of Cursive Name Bazilah')
