@@ -96,7 +96,7 @@ hold on
 plot(x2, y2, 'bo', 'MarkerFaceColor', 'b') 
 axis([-0.2 9 -0.2 4.5])
 grid on
-title('Spline Interpolation of Cursive Name Fiqah')
+title('Spline Interpolation of Cursive Name Bazilah')
 xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
