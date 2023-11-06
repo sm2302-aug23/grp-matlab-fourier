@@ -101,3 +101,29 @@ xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
+
+subplot(4,1,4);
+x4 = [0.3 0.55 0.5 0.25 0.3 0.55 1.25 1.6 1.4 1.25 ...
+1.6 1.9 2.05 1.95 1.8 1.9 2.1 2.35 2.6 2.8 3 2.8 2.6 2.8 3.03 3.55 ...
+4.35 4.65 4.4 3.3 3.12 4.35 4.65 4.7 4.9 5.1 5.3 5.5 5.3 5.1 5.3 5.4 5.5];
+y4 = [3.3 1.5 0.85 0.3 1 1.5 1.65 2.5 3.3 1.65 0.3 1.3 1.85 ...
+2.15 1.85 1.3 0.5 0.3 0.8 1.5 2.8 3.3 2.8 1.5 0.576 0.11 0.3 ...
+1.1 1.9 1.9 0.38 0.3 1.1 0.5 0.3 0.6 1.5 2.6 3.3 2.6 1.5 0.7 0.3];
+n = length(x4);
+t = 0:n-1; 
+tt = 0:0.01:n-1; 
+
+xx = spline(t, x4, tt);
+yy = spline(t, y4, tt);
+
+figure(1)
+plot(xx, yy, 'k', 'LineWidth', 1.5) 
+hold on
+plot(x4, y4, 'bo', 'MarkerFaceColor', 'b') 
+axis([-0.2 6 -0.2 4.5])
+grid on
+title('Spline Interpolation of Cursive Name Hilal')
+xlabel('x')
+ylabel('y')
+set(gca, 'FontSize', 10, 'LineWidth', 1)
+grid on
