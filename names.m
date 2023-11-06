@@ -29,9 +29,6 @@ hold on
 plot(x1, y1, 'bo', 'MarkerFaceColor', 'b')
 axis([-0.2 15 -5 5])
 grid on
-t = tiledlayout(2,2);
-ax1 = nexttile;
-plot(ax1, xx, yy);
 title('Spline Interpolation of Cursive Name Syafiqah')
 xlabel('x')
 ylabel('y')
@@ -61,11 +58,8 @@ figure(1)
 plot(xx, yy, 'k', 'LineWidth', 1.5) 
 hold on
 plot(x2, y2, 'bo', 'MarkerFaceColor', 'b') 
-axis([-0.2 15 -5 5])
+axis([-0.2 6 -0.2 4.5])
 grid on
-t = tiledlayout(2,2);
-ax2 = nexttile;
-plot(ax2, xx, yy);
 title('Spline Interpolation of Cursive Name Fiqah')
 xlabel('x')
 ylabel('y')
