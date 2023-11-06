@@ -82,19 +82,19 @@ y3 = [1.6 1.9 1.80 1.40 1.2 0.85 0.85 1.3 1.7 ...
     1.250 1.90 2.0 1.6 0.9 0.8 ...
     1.50 1.6 1.2 0.85 1.05 1.6 0.95 0.90 ...
     1.236 1.8 2.00 1.6 0.80 1.40 1.5 1.2 0.90 1.2];
-
+    
 n = length(x3);
-t = 0:n-1; 
-tt = 0:0.01:n-1; 
+t = 0:n-1;
+tt = 0:0.01:n-1;
 
 xx = spline(t, x3, tt);
 yy = spline(t, y3, tt);
 
 figure(1)
-plot(xx, yy, 'k', 'LineWidth', 1.5) 
+plot(xx, yy, 'k', 'LineWidth',1.5)
 hold on
-plot(x3, y3, 'bo', 'MarkerFaceColor', 'b') 
-axis([-0.2 9 -0.2 4.5])
+plot(x3, y3, 'bo', 'MarkerFaceColor', 'b')
+axis([-0.2 9 -5 5])
 grid on
 title('Spline Interpolation of Cursive Name Bazilah')
 xlabel('x')
