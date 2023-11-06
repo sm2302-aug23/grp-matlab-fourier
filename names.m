@@ -58,7 +58,7 @@ figure(1)
 plot(xx, yy, 'k', 'LineWidth', 1.5) 
 hold on
 plot(x2, y2, 'bo', 'MarkerFaceColor', 'b') 
-axis([-0.2 6 -0.2 4.5])
+axis([-0.2 6 -0.2 3])
 grid on
 title('Spline Interpolation of Cursive Name Fiqah')
 xlabel('x')
