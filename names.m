@@ -56,11 +56,11 @@ tt2 = 0:0.01:n2-1;
 xx2 = spline(t2, x2, tt2);
 yy2 = spline(t2, y2, tt2);
 
-figure(2)
+figure(1)
 plot(xx2, yy2, 'k', 'LineWidth', 1.5) 
 hold on
 plot(x, y, 'bo', 'MarkerFaceColor', 'b') 
-axis([-0.2 6 -0.2 4.5])
+axis([-0.2 15 -5 5])
 grid on
 t = tiledlayout(2,2);
 ax2 = nexttile;
