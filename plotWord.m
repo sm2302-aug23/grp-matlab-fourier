@@ -45,3 +45,50 @@ Letter('x') = [0 2/3; 2 4/2; 2 4/2; 3.5 2/2; 2 0.5/2; 2 0.5/2; 6 4/2; 6 4/2; 4 2
 Letter('y') = [0 2/3; 1 5/2.5; 1.5 1/2.5; 3.25 1/2.5; 4 5/2.5; 3.75 0.5/2.5; 3.5 -2.5/2.5; ...
                2 -4/2.5; 1 -3/2.5; 6 2/3];
 Letter('z') = [0 2/3; 2 4/2; 6 4/2; 4 2/2; 4 2/2; 6 2/2; 6 -1/2; 2 -2/2; 8 2/3];
+
+% Check for uppercase letters before proceeding
+if any(isstrprop(word, 'upper')) 
+   disp('Error : Uppercase letter does not exist.')
+   return;
+end
+
+figure;
+hold on;
+
+% Initialize the gap and current point
+gap = 0; % make sure there is no gap between letters
+currentX = 0;
+xx = zeros(currentX);
+yy = zeros(currentX);
+
+for i = 1:length(word)
+    letter = lower(word(i)); % lowercase the letter
+    if isKey(Letter, letter)
+        points = Letter(letter);
+        points(:, 1) = points(:, 1) + currentX;
+        t = linspace(1, size(points, 1), 100);
+        xx = spline(1:size(points, 1), points(:, 1), t);
+        yy = spline(1:size(points, 1), points(:, 2), t);
+
+        plot(xx, yy, 'LineWidth', 1.5);
+
+        if i < length(word)
+
+            nextLetter = lower(word(i + 1));
+            nextPoints = Letter(nextLetter);
+            xx = [xx, nextPoints(:, 1)'];
+            yy = [yy, nextPoints(:, 2)'];
+
+            currentX = max(xx) + gap; % update starting x-coordinate
+        end
+    end
+end
+
+% Plot settings
+plot(xx, yy, 'k', 'LineWidth', 1.5);
+
+title(word); % outputs the title to be the word called
+xlabel('x');
+ylabel('y');
+grid on;
+hold off
