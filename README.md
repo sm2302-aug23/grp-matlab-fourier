@@ -62,7 +62,7 @@ grid on
 ```
 
 
-% 2) Spline Interpolation of 'Fiqah'
+2) Spline Interpolation of 'Fiqah'
 
 ``` r
 subplot(4,1,2);
@@ -97,7 +97,7 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 ```
 
-% 3) Spline Interpolation of 'Bazilah'
+3) Spline Interpolation of 'Bazilah'
 
 ``` r
 subplot(4,1,3);
@@ -136,8 +136,9 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 ```
 
-% 4) Spline Interpolation of 'Hilal'
+4) Spline Interpolation of 'Hilal'
 
+``` r
 subplot(4,1,4);
 x4 = [0.3 0.55 0.5 0.25 0.3 0.55 1.25 1.6 1.4 1.25 ...
 1.6 1.9 2.05 1.95 1.8 1.9 2.1 2.35 2.6 2.8 3 2.8 2.6 2.8 3.03 3.55 ...
@@ -164,13 +165,15 @@ xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
-
+```
 
 ## 3. Word combination & function scripting
+
 
 We created a function using containers.Map to combine letters into words. 
 The function code are shown below:
 
+``` r
 function plotWord(word)
 
 % use containers.Map to contain all letters' data
@@ -265,3 +268,4 @@ xlabel('x');
 ylabel('y');
 grid on;
 hold off
+```
