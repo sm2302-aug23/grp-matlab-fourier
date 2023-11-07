@@ -37,7 +37,7 @@ figure(1)
 plot(xx, yy, 'k', 'LineWidth',1.5) % plot spline
 hold on
 plot(x1, y1, 'bo', 'MarkerFaceColor', 'b') % plot data points
-axis([-0.2 15 -5 5])
+axis([-0.2 15 -2 4])
 grid on
 title('Spline Interpolation of Cursive Name Syafiqah')
 xlabel('x')
