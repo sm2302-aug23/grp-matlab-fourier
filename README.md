@@ -9,13 +9,15 @@ On a graph paper, each member is to write their (short-hand) name in cursive and
 From the recorded coordinates, we reconstructed each member's names using spline interpolation.
 The code are shown below:
 
-% Task 1: Spline Your Name
+Task 1: Spline Your Name
 
 
-% 1) Spline Interpolation of 'Syafiqah'
+1) Spline Interpolation of 'Syafiqah'
 
-% use subplot for plotting different graphs in the same figure
+``` r
+% Use subplot for plotting different graphs in the same figure
 subplot(4,1,1);
+
 % Define data points for x and y coordinates
 % Each line is the x and y coordinate for one letter respectively
 x1 = [0 5/3 7/6 2/3 0.5 5/6 5/3 5/6 2/3 5/3 ...
@@ -57,6 +59,8 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 
 % note: all comments are the same for the following names
+```
+
 
 % 2) Spline Interpolation of 'Fiqah'
 
