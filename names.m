@@ -4,9 +4,10 @@
 % 1) Spline Interpolation of 'Syafiqah'
 
 % use subplot for plotting different graphs in the same figure
-subplot(4,1,1);
 % Define data points for x and y coordinates
 % Each line is the x and y coordinate for one letter respectively
+
+subplot(4,1,1);
 x1 = [0 5/3 7/6 2/3 0.5 5/6 5/3 5/6 2/3 5/3 ...
     2 13/6 11/4 3 35/12 17/6 7/3 2 10/3 ...
     13/3 49/12 15/4 7/2 15/4 13/3 14/3 55/12 14/3 5 ...
