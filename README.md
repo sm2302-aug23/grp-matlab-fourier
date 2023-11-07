@@ -1,4 +1,6 @@
-# FourieR Group Assignment (MATLAB)
+> FourieR Group Assignment (MATLAB)
+
+# Spline your name
 
 ## 1. Graph Paper Transcription
 
@@ -7,8 +9,6 @@ On a graph paper, each member is to write their (short-hand) name in cursive and
 ## 2. Digital Reconstruction
 
 From the recorded coordinates, we reconstructed each member's names using spline interpolation. The code are shown below:
-
-Task 1: Spline Your Name
 
 1)  Spline Interpolation of 'Syafiqah'
 
