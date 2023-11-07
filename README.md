@@ -6,15 +6,13 @@ On a graph paper, each member is to write their (short-hand) name in cursive and
 
 ## 2. Digital Reconstruction
 
-From the recorded coordinates, we reconstructed each member's names using spline interpolation.
-The code are shown below:
+From the recorded coordinates, we reconstructed each member's names using spline interpolation. The code are shown below:
 
 Task 1: Spline Your Name
 
+1)  Spline Interpolation of 'Syafiqah'
 
-1) Spline Interpolation of 'Syafiqah'
-
-``` r
+``` matlab
 % Use subplot for plotting different graphs in the same figure
 subplot(4,1,1);
 
@@ -61,10 +59,9 @@ grid on
 % note: all comments are the same for the following names
 ```
 
+2)  Spline Interpolation of 'Fiqah'
 
-2) Spline Interpolation of 'Fiqah'
-
-``` r
+``` matlab
 subplot(4,1,2);
 x2 = [1.6 1.2 1.1 1.1 1.1 0.9 0.8 1.1 1.5 ...
 1.5 1.5 1.65 1.8 1.9 ... 
@@ -97,9 +94,9 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 ```
 
-3) Spline Interpolation of 'Bazilah'
+3)  Spline Interpolation of 'Bazilah'
 
-``` r
+``` matlab
 subplot(4,1,3);
 x3 = [1.0 1.5 1.90 1.55 2.0 1.75 1.25 1.3 1.4 ...
     3.05 2.7 2.3 2.40 2.75 3.1 3.05 3.40 3.70 ...
@@ -136,9 +133,9 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 ```
 
-4) Spline Interpolation of 'Hilal'
+4)  Spline Interpolation of 'Hilal'
 
-``` r
+``` matlab
 subplot(4,1,4);
 x4 = [0.3 0.55 0.5 0.25 0.3 0.55 1.25 1.6 1.4 1.25 ...
 1.6 1.9 2.05 1.95 1.8 1.9 2.1 2.35 2.6 2.8 3 2.8 2.6 2.8 3.03 3.55 ...
@@ -167,13 +164,15 @@ set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 ```
 
+The outcome will look like this:
+
+![](names.jpg)
+
 ## 3. Word combination & function scripting
 
+We created a function using containers.Map to combine letters into words. The function code are shown below:
 
-We created a function using containers.Map to combine letters into words. 
-The function code are shown below:
-
-``` r
+``` matlab
 function plotWord(word)
 
 % use containers.Map to contain all letters' data
