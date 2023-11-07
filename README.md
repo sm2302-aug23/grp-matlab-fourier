@@ -64,6 +64,7 @@ grid on
 
 % 2) Spline Interpolation of 'Fiqah'
 
+``` r
 subplot(4,1,2);
 x2 = [1.6 1.2 1.1 1.1 1.1 0.9 0.8 1.1 1.5 ...
 1.5 1.5 1.65 1.8 1.9 ... 
@@ -94,9 +95,11 @@ xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
+```
 
 % 3) Spline Interpolation of 'Bazilah'
 
+``` r
 subplot(4,1,3);
 x3 = [1.0 1.5 1.90 1.55 2.0 1.75 1.25 1.3 1.4 ...
     3.05 2.7 2.3 2.40 2.75 3.1 3.05 3.40 3.70 ...
@@ -131,6 +134,7 @@ xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
+```
 
 % 4) Spline Interpolation of 'Hilal'
 
